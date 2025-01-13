@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/neue-machina-regular.otf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 350px;
+}
+
+body {
+  background-color: #f1f1f1;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1200px;
+}
+
+.menu {
+  display: flex;
+  background-color: #c6bad6;
+  width: 80px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  width: 100%;
+  background: rgb(232,223,231);
+  background: linear-gradient(115deg, rgba(232,223,231,1) 0%, rgba(232,223,231,1) 16%, rgba(224,206,219,1) 17%, rgba(224,206,219,1) 28%, rgba(224,206,219,1) 30%, rgba(224,206,219,1) 32%, rgba(189,172,184,1) 33%, rgba(189,172,184,1) 39%, rgba(227,222,225,1) 40%, rgba(227,222,225,1) 57%, rgba(197,205,215,1) 58%, rgba(197,205,215,1) 64%, rgba(197,205,215,1) 68%, rgba(197,205,215,1) 70%, rgba(197,205,215,1) 74%, rgba(174,174,193,1) 75%, rgba(176,173,194,1) 77%, rgba(176,173,194,1) 79%, rgba(176,173,194,1) 81%, rgba(176,173,194,1) 83%, rgba(198,188,216,1) 85%, rgba(198,186,214,1) 100%);
+}
+
+.header img {
+  width: 250px;
+  filter: drop-shadow(3px 5px 2px #3e2a5766);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 9rem 1rem;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2 {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #ffffffaa;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.menu ul li a.active  {
+  color: #6b4b96;
+}
+
+.menu ul li a:hover {
+  color: #6b4b96;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.menu ul li a .menu-title,
+.menu ul li a img.purple {
+  display: none;
+}
+
+
+.menu ul li a.active img.purple,
+.menu ul li a:hover img.purple  {
+  display: block;
+}
+
+.menu ul li a.active img.white,
+.menu ul li a:hover img.white {
+  display: none;
+}
+
+.content  {
+  height: 100%;
+  color: #6b4b96;
+  padding: 1.5rem;
+}
+
+.footer {
+  background-color: #6338f0;
+  min-height: 100px;
+  padding: 1rem 1.5rem;
+}
+
+
+
+@media only screen and (min-width: 600px){
+  .header {
+    height: 200px;
+  }
+
+  .header img {
+    width: 300px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .menu {
+    min-width: 200px;
+  }
+
+  ul {
+    padding: 9rem 0.5rem 0 2rem;
+  }
+
+  .menu ul li a {
+    justify-content: flex-start;
+  }
+
+  .menu ul li a .menu-title {
+    display: block;
+  }
+
+  .header img {
+    width: 320px;
+  }
+}
