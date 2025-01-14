@@ -1,0 +1,87 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: #6b4b96;
+  /* height: 150px; */
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  width: 80%;
+  transition: transform 0.6s;
+}
+
+.info:hover {
+  cursor: pointer;
+}
+
+.info:hover:nth-child(even),
+.info:focus:nth-child(even) {
+  transition: transform 1.2s;
+  -webkit-transform:  translate(20px, 0px);
+  -moz-transform:  translate(20px, 0px);
+  -ms-transform:  translate(20px, 0px);
+  -o-transform:  translate(20px, 0px);
+  transform:  translate(20px, 0px);
+}
+
+.info:hover:nth-child(odd),
+.info:focus:nth-child(odd) {
+  cursor: pointer;
+  transition: transform 1.2s;
+  -webkit-transform:  translate(-20px, 0px);
+  -moz-transform:  translate(-20px, 0px);
+  -ms-transform:  translate(-20px, 0px);
+  -o-transform:  translate(-20px, 0px);
+  transform:  translate(-20px, 0px);
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 600px){
+  .info:hover:nth-child(even),
+  .info:focus:nth-child(even) {
+    transition: transform 1.2s;
+    -webkit-transform:  translate(50px, 0px);
+    -moz-transform:  translate(50px, 0px);
+    -ms-transform:  translate(50px, 0px);
+    -o-transform:  translate(50px, 0px);
+    transform:  translate(50px, 0px);
+  }
+
+  .info:hover:nth-child(odd),
+  .info:focus:nth-child(odd) {
+    cursor: pointer;
+    transition: transform 1.2s;
+    -webkit-transform:  translate(-50px, 0px);
+    -moz-transform:  translate(-50px, 0px);
+    -ms-transform:  translate(-50px, 0px);
+    -o-transform:  translate(-50px, 0px);
+    transform:  translate(-50px, 0px);
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+  .info:hover:nth-child(even),
+  .info:focus:nth-child(even) {
+    transition: transform 1.2s;
+    -webkit-transform:  translate(70px, 0px);
+    -moz-transform:  translate(70px, 0px);
+    -ms-transform:  translate(70px, 0px);
+    -o-transform:  translate(70px, 0px);
+    transform:  translate(70px, 0px);
+  }
+
+  .info:hover:nth-child(odd),
+  .info:focus:nth-child(odd) {
+    cursor: pointer;
+    transition: transform 1.2s;
+    -webkit-transform:  translate(-70px, 0px);
+    -moz-transform:  translate(-70px, 0px);
+    -ms-transform:  translate(-70px, 0px);
+    -o-transform:  translate(-70px, 0px);
+    transform:  translate(-70px, 0px);
+  }
+}
