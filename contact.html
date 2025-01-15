@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/info.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 <body>
     <div class="container">
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="index.html" class="home">
+                    <a href="index.html">
                         <img src="./assets/img/home.white.svg" class="white" alt="" width="32px">
                         <img src="./assets/img/home.purple.svg" class="purple" alt="" width="32px">
                         <div class="menu-title">
@@ -27,21 +27,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="about.html" class="about">
+                    <a href="about.html">
                         <img src="./assets/img/about-us.white.svg" class="white" alt="" width="32px">
                         <img src="./assets/img/about-us.purple.svg" class="purple" alt="" width="32px">
                         <div class="menu-title">Sobre</div>
                     </a>
                 </li>
                 <li>
-                    <a href="schedule.html" class="schedule">
+                    <a href="schedule.html">
                         <img src="./assets/img/schedule.white.svg" class="white" alt="" width="32px">
                         <img src="./assets/img/schedule.purple.svg" class="purple" alt="" width="32px">
                         <div class="menu-title">Horários</div>
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" class="contact active">
+                    <a href="contact.html" class="active">
                         <img src="./assets/img/phone.white.svg" class="white" alt="" width="32px">
                         <img src="./assets/img/phone.purple.svg" class="purple" alt="" width="32px">
                         <div class="menu-title">
@@ -57,10 +57,30 @@
                 <img src="./assets/img/logo.contact.png" alt="">
             </header>
 
-            <section class="content contact">
-                <section class="info general">
-                    <h2>Clínico Geral</h2>
-                    <p>Seu bem-estar em primeiro lugar. Na FortDIO, nossos clínicos gerais oferecem atendimento completo e personalizado, cuidando da sua saúde com cuidado e profissionalismo.</p>
+            <section class="content page-contact">
+                <section class="contact phone">
+                    <h2>Telefones e Whatsapp</h2>
+                    <p>3333-3333</p>
+                    <p>99999-9999</p>
+                </section>
+
+                <section class="contact address">
+                    <h2>Nossa Localização</h2>
+                    <p>Fortaleza-CE</p>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127394.50279014772!2d-38.602016268354234!3d-3.7931392458685234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20CE%2C%20Brasil!5e0!3m2!1spt-PT!2spt!4v1736966936437!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+                <section class="contact form">
+                    <form name="mensage" action="#" onsubmit="alert('Mensagem enviada. Em breve entraremos em contato no seu email')">
+                        Nome <input type="text">
+                        Email <input type="email">
+                        Assunto <input type="text">
+                        Mensagem <input type="text-area">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar Formulário</button>
+                    </form>
                 </section>
             </section>
 
