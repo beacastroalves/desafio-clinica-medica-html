@@ -1,0 +1,43 @@
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem 0 3rem 0;
+  margin: 0 auto;
+}
+
+table {
+  color: #6b4b96;
+  border-collapse: collapse;
+  min-width: 270px;
+  box-shadow: 13px 15px 29px -4px #3e2a5766;
+  -webkit-box-shadow: 13px 15px 29px -4px #3e2a5766;
+  -moz-box-shadow: 13px 15px 29px -4px #3e2a5766;
+}
+
+thead th {
+  background-color: #6b4b96;
+  color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.75rem;
+}
+
+table tr {
+  border-color:#6b4b96;
+}
+
+table td {
+  padding: 0.5rem 0.75rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #d1cada;
+}
+
+
+@media only screen and (min-width: 100px) {
+  .tables {
+    max-width: 60vw;
+  }
+}
