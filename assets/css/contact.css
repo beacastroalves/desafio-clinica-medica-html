@@ -88,6 +88,13 @@ iframe {
   transition-duration: 0.6s;
 }
 
+
+.box:hover {
+  box-shadow: 13px 15px 29px -4px #3e2a5799;
+  -webkit-box-shadow: 13px 15px 29px -4px #3e2a5799;
+  -moz-box-shadow: 13px 15px 29px -4px #3e2a5799;
+}
+
 form {
   display: flex;
   flex-direction: column;
