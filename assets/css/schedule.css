@@ -14,6 +14,7 @@ table {
   box-shadow: 13px 15px 29px -4px #3e2a5766;
   -webkit-box-shadow: 13px 15px 29px -4px #3e2a5766;
   -moz-box-shadow: 13px 15px 29px -4px #3e2a5766;
+  user-select: none;
 }
 
 thead th {

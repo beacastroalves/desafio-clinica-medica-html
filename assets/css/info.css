@@ -10,10 +10,11 @@
   box-shadow: 3px 5px 14px -1px #3e2a5799;
   -webkit-box-shadow: 3px 5px 14px -1px #3e2a5799;
   -moz-box-shadow: 3px 5px 14px -1px #3e2a5799;
+  user-select: none;
 }
 
 .info:hover {
-  cursor: pointer;
+  user-select: none;
 }
 
 .info:hover:nth-child(even),
@@ -31,7 +32,7 @@
 
 .info:hover:nth-child(odd),
 .info:focus:nth-child(odd) {
-  cursor: pointer;
+  user-select: none;
   transition: transform 1.2s;
   -webkit-transform:  translate(-20px, 0px);
   -moz-transform:  translate(-20px, 0px);
@@ -60,7 +61,7 @@
 
   .info:hover:nth-child(odd),
   .info:focus:nth-child(odd) {
-    cursor: pointer;
+    user-select: none;
     transition: transform 1.2s;
     -webkit-transform:  translate(-50px, 0px);
     -moz-transform:  translate(-50px, 0px);
@@ -84,7 +85,7 @@
 
   .info:hover:nth-child(odd),
   .info:focus:nth-child(odd) {
-    cursor: pointer;
+    user-select: none;
     transition: transform 1.2s;
     -webkit-transform:  translate(-70px, 0px);
     -moz-transform:  translate(-70px, 0px);

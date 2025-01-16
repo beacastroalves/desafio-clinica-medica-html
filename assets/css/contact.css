@@ -23,7 +23,7 @@
 }
 
 .contact:hover {
-  cursor: pointer;
+  user-select: none;
 }
 
 .contact:hover:nth-child(even),
@@ -41,7 +41,7 @@
 
 .contact:hover:nth-child(odd),
 .contact:focus:nth-child(odd) {
-  cursor: pointer;
+  user-select: none;
   transition: transform 1.2s;
   -webkit-transform:  translate(3px, 0px);
   -moz-transform:  translate(3px, 0px);
