@@ -123,6 +123,7 @@ label {
 
 input, textarea {
   display: flex;
+  color: #6b4b96;
   background-color: #f1f1f1;
   border: 1px solid #6b4b96;
   border-radius: 0.5rem;
@@ -135,7 +136,17 @@ textarea {
   margin-bottom: 1.5rem;
 }
 
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+  color: #3e2a57;
+  border: 1px solid #3e2a57;
+  outline: none;
+}
+
 #btn1, #btn2 {
+  cursor: pointer;
   display: flex;
   background-color: #6b4b96;
   border: 1px solid #6b4b96;
@@ -163,7 +174,9 @@ textarea {
 }
 
 #btn1:hover,
-#btn2:hover {
+#btn2:hover,
+#btn1:focus,
+#btn2:focus  {
   font-weight: 700;
   background-color: #4d336e;
   border-color: #4d336e;
